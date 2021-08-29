@@ -141,7 +141,7 @@ function appendContestTime(parent, datetime) {
         }
     } else {
         diff = moment(moment(datetime).diff(moment())).add(20, 'minutes')
-        dateformated = 'Starts: ' + diffToString(diff) + ' ago'
+        dateformated = 'Remains: ' + diffToString(diff) 
         parent.removeClass('bg-light').addClass('bg-danger')
     }
     parent.children('h6').text(dateformated)
